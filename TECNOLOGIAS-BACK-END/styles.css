@@ -1,0 +1,106 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: url('https://www.example.com/path/to/your/programming-image.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header-content p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #0056b3;
+}
+
+nav {
+  background: #007bff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.links-section h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.link-box {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.link-box:hover {
+  transform: translateY(-5px);
+}
+
+.link-box h3 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+}
+
+.link-box p {
+  margin: 0;
+  color: #555;
+}
+
+.link-box a {
+  color: #007bff;
+  text-decoration: none;
+}

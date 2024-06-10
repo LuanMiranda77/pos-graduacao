@@ -3,14 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="page/styles/global.css" media="screen" />
-  <title>Document</title>
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <div class="header-content">
+      <h1>Bem-vindo ao Sistema</h1>
+      <p>Gerencie seus produtos, estoque e clientes de maneira eficiente.</p>
+      <a href="#links" class="cta-button">Comece Agora</a>
+    </div>
+  </header>
   <nav>
-    <a class="btn" href="page/client/index.html">Clientes</a>
-    <a class="btn" href="page/product/index.html">Produtos</a>
-    <a class="btn" href="page/stock/index.html">Estoque</a>
+    <ul>
+      <li><a href="page/product/index.html">Produto</a></li>
+      <li><a href="page/stock/index.html">Estoque</a></li>
+      <li><a href="page/client/index.html">Cliente</a></li>
+    </ul>
   </nav>
+  <section id="links" class="links-section">
+    <h2>Explore Nossas Funcionalidades</h2>
+    <div class="links-container">
+      <div class="link-box">
+        <h3><a href="produto.html">Produto</a></h3>
+        <p>Gerencie seus produtos de forma eficiente.</p>
+      </div>
+      <div class="link-box">
+        <h3><a href="estoque.html">Estoque</a></h3>
+        <p>Mantenha seu estoque sempre atualizado.</p>
+      </div>
+      <div class="link-box">
+        <h3><a href="cliente.html">Cliente</a></h3>
+        <p>Controle as informações dos seus clientes.</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

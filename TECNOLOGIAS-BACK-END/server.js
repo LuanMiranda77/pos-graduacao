@@ -1,10 +1,24 @@
 const express = require("express");
 const app = express();
+const bodyparser = require("body-parser");
 const router_params = require("./params.js");
 
 const hotname = "127.0.0.1";
 
 const port = 5000;
+
+app.use(bodyparser.urlencoded({ extended: false }));
+
+const middleware = function (req, res, next) {
+  req.body.id = Math.random(0, 1999) + 1;
+  next();
+};
+app.use(middleware);
+app.use("/contato", express.static(__dirname + "/public/contato"));
+app.post("/contato", (req, res) => {
+  console.log(req.body);
+  res.redirect("/");
+});
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
