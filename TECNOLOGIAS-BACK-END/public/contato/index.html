@@ -8,19 +8,23 @@
 </head>
 <body>
   <div class="container">
-    <form class="contact-form" method="post" action="/contato">
-      <h2>Contact Us</h2>
+    <form class="contact-form" method="post" action="/auth/signup">
+      <h2>Fale o que sente</h2>
       <div class="form-group">
-        <label for="name">Nome</label>
-        <input type="text" id="name" name="name" required>
+        <label for="username">Nome</label>
+        <input type="text" id="username" name="username" required>
       </div>
       <div class="form-group">
         <label for="email">E-mail</label>
         <input type="email" id="email" name="email" required>
       </div>
       <div class="form-group">
-        <label for="comments">Comentários</label>
-        <textarea id="comments" name="comments" rows="5" required></textarea>
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="coment">Comentários</label>
+        <textarea id="coment" name="coment" rows="5" required></textarea>
       </div>
       <button type="submit">Submit</button>
     </form>

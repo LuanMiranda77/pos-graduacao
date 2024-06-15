@@ -2,12 +2,27 @@ const express = require("express");
 const app = express();
 const bodyparser = require("body-parser");
 const router_params = require("./params.js");
+const mongo = require("mongoose");
+const db = require("./setup/db.js").mongoURL;
 
 const hotname = "127.0.0.1";
 
 const port = 5000;
 
+mongo
+  .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log("deucerto");
+  })
+  .catch((err) => {
+    console.log("deuerro");
+  });
+
 app.use(bodyparser.urlencoded({ extended: false }));
+app.use(bodyparser.json());
+
+const auth = require("./routes/api/auth");
+app.use("/auth", auth);
 
 const middleware = function (req, res, next) {
   req.body.id = Math.random(0, 1999) + 1;
